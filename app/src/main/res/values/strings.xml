@@ -2,4 +2,5 @@
     <string name="app_name">DiceRoller</string>
     <string name="btn_roll_label">Roll</string>
     <string name="btn_count_up_label">count up</string>
+    <string name="iv_dice_image_desc">Dice image</string>
 </resources>

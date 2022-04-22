@@ -2,6 +2,7 @@ package com.codelab.mezencio.diceroller
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -9,29 +10,23 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val resultText: TextView = findViewById(R.id.tv_result_text)
 
         val rollButton: Button = findViewById(R.id.btn_roll)
-        rollButton.setOnClickListener { rollDice(resultText) }
-
-        val countUpButton: Button = findViewById(R.id.btn_count_up)
-        countUpButton.setOnClickListener { countUp(resultText) }
+        rollButton.setOnClickListener { rollDice() }
     }
 
-    private fun rollDice(resultText: TextView) {
-//        Toast.makeText(this, "Button clicked", Toast.LENGTH_SHORT).show()
+    private fun rollDice() {
         val randomInt = (1..6).random()
-        resultText.text = randomInt.toString()
-    }
+        val drawableResource = when (randomInt) {
+            1 -> R.drawable.dice_1
+            2 -> R.drawable.dice_2
+            3 -> R.drawable.dice_3
+            4 -> R.drawable.dice_4
+            5 -> R.drawable.dice_5
+            else -> R.drawable.dice_6
+        }
 
-    private fun countUp(resultText: TextView) {
-        if (resultText.text == "Hello World!") {
-            resultText.text = "1"
-            return
-        }
-        if (resultText.text == "6") {
-            return
-        }
-        resultText.text = (resultText.text.toString().toInt().plus(1)).toString()
+        val diceImage: ImageView = findViewById(R.id.iv_dice_image)
+        diceImage.setImageResource(drawableResource)
     }
 }
