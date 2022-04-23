@@ -18,6 +18,15 @@
         tools:src="@drawable/dice_1"
         android:contentDescription="@string/iv_dice_image_desc" />
 
+    <ImageView
+        android:id="@+id/iv_dice_image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/empty_dice"
+        tools:src="@drawable/dice_1"
+        android:contentDescription="@string/iv_dice_image_desc" />
+
     <Button
         android:id="@+id/btn_roll"
         android:layout_width="wrap_content"
