@@ -23,9 +23,11 @@
         style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
         android:hint="@string/what_is_your_nickname"
         android:importantForAutofill="no"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:paddingBottom="@dimen/small_padding" />
 
     <Button
         android:id="@+id/btn_done"

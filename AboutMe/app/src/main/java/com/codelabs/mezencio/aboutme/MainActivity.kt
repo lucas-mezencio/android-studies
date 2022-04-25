@@ -12,6 +12,7 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
     private lateinit var editTextNickname: EditText
     private lateinit var nicknameTextView: TextView
+    private lateinit var doneBtn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,10 +20,14 @@ class MainActivity : AppCompatActivity() {
 
         editTextNickname = findViewById(R.id.et_nickname)
         nicknameTextView = findViewById(R.id.tv_nickname)
+        doneBtn = findViewById(R.id.btn_done)
 
-        val doneBtn: Button = findViewById(R.id.btn_done)
         doneBtn.setOnClickListener {
             addNickname(it)
+        }
+
+        nicknameTextView.setOnClickListener {
+            updateNickname(it)
         }
     }
 
@@ -34,5 +39,17 @@ class MainActivity : AppCompatActivity() {
 
         val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
+    }
+
+    private fun updateNickname(view: View) {
+        view.visibility = View.GONE
+        editTextNickname.visibility = View.VISIBLE
+        doneBtn.visibility = View.VISIBLE
+
+        editTextNickname.requestFocus()
+
+        // Show the keyboard.
+        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.showSoftInput(editTextNickname, 0)
     }
 }
