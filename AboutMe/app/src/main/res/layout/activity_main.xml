@@ -20,11 +20,12 @@
 
     <EditText
         android:id="@+id/et_nickname"
+        style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/what_is_your_nickname"
         android:inputType="textPersonName"
-        android:text="@string/et_nickname_text"
-        android:autofillHints="Lucas" />
+        android:importantForAutofill="no" />
 
     <ImageView
         android:id="@+id/iv_star_image"
