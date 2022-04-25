@@ -1,4 +1,26 @@
 <resources>
     <string name="app_name">AboutMe</string>
     <string name="name">Lucas Mezencio</string>
+    <string name="iv_star_image_desc">Star image</string>
+    <string name="bio_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\n
+        Nullam vel ipsum diam. Nam vehicula blandit lacus, vitae accumsan nunc semper ut.\n
+        Proin at consequat sapien, id porttitor urna. Pellentesque habitant morbi tristique senectus et\n
+        netus et malesuada fames ac turpis egestas. Praesent malesuada nulla ac massa hendrerit tempor.\n
+        Nullam rhoncus nibh at mi lacinia egestas. Phasellus ac sem sem. Donec ut volutpat ex. Maecenas iaculis sem a egestas tempor.\n
+        Phasellus blandit vitae turpis ac tempus. Donec imperdiet, nunc vitae vestibulum euismod, urna ex pellentesque lacus,\n
+        eget consequat justo lorem eu velit. Mauris ac diam sollicitudin, dignissim nibh id, tincidunt justo.\n\n
+        Nullam vel ipsum diam. Nam vehicula blandit lacus, vitae accumsan nunc semper ut.\n
+        Proin at consequat sapien, id porttitor urna. Pellentesque habitant morbi tristique senectus et\n
+        netus et malesuada fames ac turpis egestas. Praesent malesuada nulla ac massa hendrerit tempor.\n
+        Nullam rhoncus nibh at mi lacinia egestas. Phasellus ac sem sem. Donec ut volutpat ex. Maecenas iaculis sem a egestas tempor.\n
+        Phasellus blandit vitae turpis ac tempus. Donec imperdiet, nunc vitae vestibulum euismod, urna ex pellentesque lacus,\n
+        eget consequat justo lorem eu velit. Mauris ac diam sollicitudin, dignissim nibh id, tincidunt justo.\n\n
+        Nullam vel ipsum diam. Nam vehicula blandit lacus, vitae accumsan nunc semper ut.\n
+        Proin at consequat sapien, id porttitor urna. Pellentesque habitant morbi tristique senectus et\n
+        netus et malesuada fames ac turpis egestas. Praesent malesuada nulla ac massa hendrerit tempor.\n
+        Nullam rhoncus nibh at mi lacinia egestas. Phasellus ac sem sem. Donec ut volutpat ex. Maecenas iaculis sem a egestas tempor.\n
+        Phasellus blandit vitae turpis ac tempus. Donec imperdiet, nunc vitae vestibulum euismod, urna ex pellentesque lacus,\n
+        eget consequat justo lorem eu velit. Mauris ac diam sollicitudin, dignissim nibh id, tincidunt justo.
+    </string>
 </resources>
