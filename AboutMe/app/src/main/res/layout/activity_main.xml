@@ -17,6 +17,15 @@
         android:textColor="@android:color/black"
         android:textSize="@dimen/text_size" />
 
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/et_nickname_text"
+        android:autofillHints="Lucas" />
+
     <ImageView
         android:id="@+id/iv_star_image"
         android:layout_width="match_parent"
@@ -50,9 +59,9 @@
                 style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/bio_text"
                 android:lineSpacingMultiplier="1.2"
-                android:paddingHorizontal="@dimen/small_padding"/>
+                android:paddingHorizontal="@dimen/small_padding"
+                android:text="@string/bio_text" />
         </LinearLayout>
     </ScrollView>
 
